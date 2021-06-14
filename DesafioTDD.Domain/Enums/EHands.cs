@@ -2,8 +2,8 @@ namespace DesafioTDD.Domain.Enums
 {
     public enum EHands
     {
-        Rock = 1,
-        Paper = 2,
-        Scissors = 3
+        Pedra = 1,
+        Papel = 2,
+        Tesoura = 3
     }
 }

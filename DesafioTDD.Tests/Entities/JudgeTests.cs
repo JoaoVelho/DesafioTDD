@@ -9,8 +9,8 @@ namespace DesafioTDD.Tests.Entities
     {
         [TestMethod]
         public void ShouldReturnNullIfPlayersMoveAreEqual() {
-            Player player1 = new Player(EHands.Paper);
-            Player player2 = new Player(EHands.Paper);
+            Player player1 = new Player(EHands.Papel);
+            Player player2 = new Player(EHands.Papel);
 
             Judge judge = new Judge(player1, player2);
 
@@ -19,8 +19,8 @@ namespace DesafioTDD.Tests.Entities
 
         [TestMethod]
         public void ShouldReturnPlayer1IfHePlaysRockAgainstScissors() {
-            Player player1 = new Player(EHands.Rock);
-            Player player2 = new Player(EHands.Scissors);
+            Player player1 = new Player(EHands.Pedra);
+            Player player2 = new Player(EHands.Tesoura);
 
             Judge judge = new Judge(player1, player2);
 
@@ -29,8 +29,8 @@ namespace DesafioTDD.Tests.Entities
 
         [TestMethod]
         public void ShouldReturnPlayer1IfHePlaysScissorsAgainstPaper() {
-            Player player1 = new Player(EHands.Scissors);
-            Player player2 = new Player(EHands.Paper);
+            Player player1 = new Player(EHands.Tesoura);
+            Player player2 = new Player(EHands.Papel);
 
             Judge judge = new Judge(player1, player2);
 
@@ -39,8 +39,8 @@ namespace DesafioTDD.Tests.Entities
 
         [TestMethod]
         public void ShouldReturnPlayer1IfHePlaysPaperAgainstRock() {
-            Player player1 = new Player(EHands.Paper);
-            Player player2 = new Player(EHands.Rock);
+            Player player1 = new Player(EHands.Papel);
+            Player player2 = new Player(EHands.Pedra);
 
             Judge judge = new Judge(player1, player2);
 

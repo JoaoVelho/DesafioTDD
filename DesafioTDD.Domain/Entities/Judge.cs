@@ -14,11 +14,11 @@ namespace DesafioTDD.Domain.Entities
         public Player DefineWinner() {
             if (Player1.Move == Player2.Move)
                 return null;
-            else if (Player1.Move == Enums.EHands.Rock && Player2.Move == Enums.EHands.Scissors)
+            else if (Player1.Move == Enums.EHands.Pedra && Player2.Move == Enums.EHands.Tesoura)
                 return Player1;
-            else if (Player1.Move == Enums.EHands.Paper && Player2.Move == Enums.EHands.Rock)
+            else if (Player1.Move == Enums.EHands.Papel && Player2.Move == Enums.EHands.Pedra)
                 return Player1;
-            else if (Player1.Move == Enums.EHands.Scissors && Player2.Move == Enums.EHands.Paper)
+            else if (Player1.Move == Enums.EHands.Tesoura && Player2.Move == Enums.EHands.Papel)
                 return Player1;
             else
                 return Player2;

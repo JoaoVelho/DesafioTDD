@@ -9,20 +9,27 @@ namespace DesafioTDD.Domain
     {
         static void Main(string[] args)
         {
-            EHands play1 = UserEntry.Validate(1);
-            EHands play2 = UserEntry.Validate(2);
+            EHands move1, move2;
+            
+            do {
+                move1 = UserEntry.GetMove(1);
+            } while (move1 == 0);
 
-            Player player1 = new Player(play1);
-            Player player2 = new Player(play2);
+            do {
+                move2 = UserEntry.GetMove(2);
+            } while (move2 == 0);
+
+            Player player1 = new Player(move1);
+            Player player2 = new Player(move2);
 
             Judge judge = new Judge(player1, player2);
 
             Player winner = judge.DefineWinner();
 
             if (winner != null)
-                Console.WriteLine(winner.Move);
+                Console.WriteLine(winner.Move + " ganhou!");
             else
-                Console.WriteLine("Empate");
+                Console.WriteLine("Empate!");
         }
     }
 }

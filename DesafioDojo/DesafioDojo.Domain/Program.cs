@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using DesafioDojo.Domain.Entities;
+using DesafioDojo.Domain.Utils;
 
 namespace DesafioDojo.Domain
 {
@@ -8,8 +9,11 @@ namespace DesafioDojo.Domain
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite a quantidade de lâmpadas:");
-            Int32.TryParse(Console.ReadLine(), out int numberLights);
+            int numberLights = 0;
+
+            while (numberLights == 0) {
+                numberLights = UserEntry.GetNumber();
+            }
 
             var lights = new List<Light>();
             for (int i = 0; i < numberLights; i++) {

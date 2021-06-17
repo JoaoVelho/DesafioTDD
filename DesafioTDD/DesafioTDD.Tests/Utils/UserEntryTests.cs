@@ -10,6 +10,7 @@ namespace DesafioTDD.Tests.Utils
     public class UserEntryTests
     {
         [TestMethod]
+        [TestCategory("Utils")]
         public void ShouldReturnZeroIfNonNumericIsPassed() {
             var input = new StringReader("abc");
             Console.SetIn(input);
@@ -19,6 +20,7 @@ namespace DesafioTDD.Tests.Utils
         }
 
         [TestMethod]
+        [TestCategory("Utils")]
         public void ShouldReturnTheSelectedMoveIfValidNumberIsPassed() {
             var input = new StringReader("2");
             Console.SetIn(input);

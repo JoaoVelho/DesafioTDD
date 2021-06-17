@@ -7,6 +7,7 @@ namespace DesafioDojo.Tests.Entities
     public class LightTests
     {
         [TestMethod]
+        [TestCategory("Entities")]
         public void ShouldSetOnAsTrueIfItIsFalse() {
             Light light = new Light();
 
@@ -15,6 +16,7 @@ namespace DesafioDojo.Tests.Entities
         }
 
         [TestMethod]
+        [TestCategory("Entities")]
         public void ShouldSetOnAsFalseIfItIsTrue() {
             Light light = new Light();
 

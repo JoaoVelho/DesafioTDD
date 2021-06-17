@@ -8,6 +8,7 @@ namespace DesafioDojo.Tests.Entities
     public class WalkTests
     {
         [TestMethod]
+        [TestCategory("Entities")]
         public void ShouldReturnLightsOnOffOffIfPassedAListWith3Lights() {
             var lights = new List<Light>();
             for (int i = 0; i < 3; i++) {

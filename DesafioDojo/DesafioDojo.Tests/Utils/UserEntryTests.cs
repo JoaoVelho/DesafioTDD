@@ -9,6 +9,7 @@ namespace DesafioDojo.Tests.Utils
     public class UserEntryTests
     {
         [TestMethod]
+        [TestCategory("Utils")]
         public void ShouldReturnZeroIfNonNumericIsPassed() {
             var input = new StringReader("abc");
             Console.SetIn(input);
@@ -18,6 +19,7 @@ namespace DesafioDojo.Tests.Utils
         }
 
         [TestMethod]
+        [TestCategory("Utils")]
         public void ShouldReturnZeroIfNumberLessThanOneIsPassed() {
             var input = new StringReader("-5");
             Console.SetIn(input);
@@ -27,6 +29,7 @@ namespace DesafioDojo.Tests.Utils
         }
 
         [TestMethod]
+        [TestCategory("Utils")]
         public void ShouldReturnTheNumberPassedIfItIsValid() {
             var input = new StringReader("4");
             Console.SetIn(input);
